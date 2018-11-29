@@ -105,7 +105,7 @@ CREATE TABLE `chat_user` (
 -- ----------------------------
 -- Records of chat_user
 -- ----------------------------
-INSERT INTO `chat_user` VALUES ('2', '刘天正', 'liutianzheng', '123456', '0', '/static/img/avatar/qianxing.jpg', '0', '1543284877', '27');
+INSERT INTO `chat_user` VALUES ('2', '管理员', 'liutianzheng', '123456', '0', '/static/img/avatar/qianxing.jpg', '0', '1543284877', '27');
 INSERT INTO `chat_user` VALUES ('3', '测试001', 'test001', '123456', '0', '/static/img/avatar/qingsong.jpg', '1543298053', '1543298053', '28');
 INSERT INTO `chat_user` VALUES ('4', '测试002', 'test002', '123456', '0', '/static/img/avatar/wangnima.jpg', '1543298086', '1543298086', '46');
 INSERT INTO `chat_user` VALUES ('5', '测试003', 'test003', '123456', '0', '/static/img/avatar/qianxing.jpg', '1543298100', '1543298100', '47');
