@@ -84,23 +84,6 @@ INSERT INTO `chat_record` VALUES ('2', '3', '2', '不怎么样', '1543391255');
 INSERT INTO `chat_record` VALUES ('3', '2', '3', '那你什么时候能完成', '1543391256');
 INSERT INTO `chat_record` VALUES ('4', '3', '2', '明天吧', '1543391257');
 INSERT INTO `chat_record` VALUES ('5', '2', '3', '还原度挺高的，就是有几个问题，有些按钮的功能还未实现，而且目前只有样式，头像也是写死的，也就只能看看，希望后续能把功能加上去，这个东西我不急，你尽快弄！', '1543391258');
-INSERT INTO `chat_record` VALUES ('45', '3', '2', '是啊', '1543458485');
-INSERT INTO `chat_record` VALUES ('46', '2', '3', '那你什么时候能做好', '1543458807');
-INSERT INTO `chat_record` VALUES ('47', '3', '2', '明天吧', '1543458815');
-INSERT INTO `chat_record` VALUES ('48', '2', '3', '你确定吗', '1543458820');
-INSERT INTO `chat_record` VALUES ('49', '3', '2', '我确定啊', '1543458827');
-INSERT INTO `chat_record` VALUES ('50', '2', '3', '去你大爷', '1543458831');
-INSERT INTO `chat_record` VALUES ('51', '3', '2', 'qu去你大爷的', '1543458842');
-INSERT INTO `chat_record` VALUES ('52', '2', '3', '哈哈哈', '1543458849');
-INSERT INTO `chat_record` VALUES ('53', '3', '2', '你笑个锤子', '1543458873');
-INSERT INTO `chat_record` VALUES ('54', '2', '3', '我就笑了 你能拿我怎么样', '1543458888');
-INSERT INTO `chat_record` VALUES ('55', '3', '2', '自己跟自己聊 好没意思', '1543458904');
-INSERT INTO `chat_record` VALUES ('56', '2', '3', '对对', '1543458908');
-INSERT INTO `chat_record` VALUES ('57', '2', '3', '222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222', '1543459086');
-INSERT INTO `chat_record` VALUES ('58', '2', '3', '222', '1543461503');
-INSERT INTO `chat_record` VALUES ('59', '2', '3', '333', '1543461513');
-INSERT INTO `chat_record` VALUES ('60', '2', '3', '111', '1543463682');
-INSERT INTO `chat_record` VALUES ('61', '2', '3', '8888888888', '1543463741');
 
 -- ----------------------------
 -- Table structure for chat_user
