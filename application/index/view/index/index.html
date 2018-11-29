@@ -1,0 +1,122 @@
+<!--纯样式页面，仅供参考，可直接在浏览器中打开-->
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/layer/theme/default/layer.css"/>
+    <link href="/static/login/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/login/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/chat.css?t={:time()}">
+</head>
+<style type="text/css">
+    .btn-min {
+        line-height: 0.5;
+    }
+    .gray-bg div .row {
+        min-height: 275px;
+    }
+    sup{left: -0.5em;}
+    .label-info{
+        line-height: 28px;
+    }
+</style>
+<body>
+
+
+
+
+<!--贴边小面板-->
+<div class="chat-min hide">
+    <div class="min-content" title="展开聊天"><i class="arrow fa fa-angle-right"></i></div>
+</div>
+<!--聊天主面板-->
+<div class="chat-box" id="chat-box">
+    <div class="main-box">
+        <div class="box-head">
+            <img style="float: left;" src="{$user.avatar}" class="user-image" alt="点击登录"/>
+            <span style="float: left;margin: 0px 17px;">{$user.nickname}</span>
+            <span class="close"><span>×</span></span>
+        </div>
+        <div class="box-tab">
+            <div prop="tab_user" title="联系人" class="tab active"><i class="fa fa-user"></i></div>
+            <div prop="tab_group" title="群组" class="tab"><i class="fa fa-users"></i></div>
+            <div prop="tab_chat" title="聊天室" class="tab"><i class="fa fa-twitch"></i></div>
+        </div>
+        <div class="box-content">
+            <div prop="tab_user" class="active">
+                <ul>
+                    {foreach $friends as $friend}
+                    <li data-id="{$friend.id}">
+                        <img src="{$friend.avatar}" class="member-image"/>
+                        <span>{$friend.nickname}</span>
+                        <p>你好啊</p>
+                    </li>
+                    {/foreach}
+                </ul>
+            </div>
+            <div prop="tab_group" class="hide">群组开发中</div>
+            <div prop="tab_chat" class="hide">聊天室开发中</div>
+        </div>
+        <div class="box-footer">
+            <i class="icon fa fa-user-plus" title="添加好友"></i>
+            <span>
+                <i class="icon fa fa-bell-o dialog-message-icon" title="消息"></i>
+                <sup>{$count}</sup>
+            </span>
+            <i btn="logout" style="color: red;" title="退出登录" class="icon fa fa-power-off"></i>
+            <i title="锁屏" class="icon fa fa-coffee"></i>
+            <i title="设置" class="icon fa fa-cog"></i>
+        </div>
+    </div>
+</div>
+
+<!--对话框整体-->
+<div class="chat-dialog hide" id="chat-dialog"  >
+    <div class="main-dialog">
+        <div class="dialog-head">
+            <img class="member-image" src="/static/img/avatar/haijiaoluoluo.jpg"/>
+            <span class="member-name">海角诺诺</span>
+            <span class="close" btn="close"><span>×</span></span>
+        </div>
+        <div class="dialog-content">
+            <p>加载更多</p>
+            <ul>
+            </ul>
+        </div>
+        <div class="dialog-tool">
+            <i title="选择表情" class="icon fa fa-smile-o"></i>
+             <i title="发送图片" class="icon fa fa-image"></i>
+            <i title="发送文件" class="icon fa fa-folder-o"></i>
+            <i title="聊天记录" class="icon icon-log fa fa-clock-o"><span>聊天记录</span></i>
+        </div>
+        <div class="dialog-message">
+            <textarea></textarea>
+        </div>
+        <div class="dialog-footer">
+            <span btn="send">发送</span>
+            <span btn="close">关闭</span>
+        </div>
+    </div>
+</div>
+
+<!--模板-->
+<li class="dialog-chat-mine hide dialog-chat-template">
+    <div class="dialog-chat-user">
+        <cite><i>2018-09-17 13:55:03</i>redsun</cite>
+        <img src="/static/img/avatar/redsun.gif">
+    </div>
+    <div class="dialog-chat-text">
+        <div class="dialog-chat-triangle"></div>
+        <div class="dialog-chat-message"></div>
+    </div>
+</li>
+
+</body>
+<script type="text/javascript" src="/static/layer/layer.js"></script>
+<script type="text/javascript" src="/static/js/chat.js?t={:time()}"></script>
+<script type="text/javascript">
+    window.chat.init("{$user.id}", '{include file="index/message"}', '{include file="index/search"/}');
+</script>
